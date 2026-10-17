@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بسملة عمرو | معرض أعمالي</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #faf7fb;
+            color: #302536;
+            line-height: 1.9;
+        }
+
+        header {
+            background: #fff;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            box-shadow: 0 3px 15px #0000000d;
+        }
+
+        .logo {
+            color: #8e5a82;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #302536;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        nav a:hover {
+            color: #8e5a82;
+        }
+
+        .hero {
+            min-height: 480px;
+            padding: 90px 8%;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #f0ddec, #faf7fb);
+        }
+
+        .hero-content {
+            max-width: 780px;
+        }
+
+        .tag {
+            color: #8e5a82;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #8e5a82;
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.5;
+            margin: 15px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #8e5a82;
+            color: white;
+            text-decoration: none;
+            padding: 11px 25px;
+            border-radius: 9px;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #704367;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .section-title {
+            color: #8e5a82;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 15px;
+            border: 1px solid #efdfeb;
+            box-shadow: 0 5px 20px #8e5a8210;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #8e5a82;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background: #f0ddec;
+            text-align: center;
+        }
+
+        footer {
+            background: #302536;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero {
+                padding: 60px 7%;
+            }
+
+            section {
+                padding: 45px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">بسملة عمرو</div>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من أنا</a>
+        <a href="#skills">مهاراتي</a>
+        <a href="#projects">مشروعاتي</a>
+        <a href="#contact">تواصل معي</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="tag">مرحبًا بكم في موقعي الشخصي</span>
+
+            <h1>أنا بسملة عمرو</h1>
+
+            <p>
+                طالبة نظم معلومات، مهتمة بالبرمجة وتطوير المواقع
+                والتكنولوجيا. أسعى دائمًا إلى تعلم مهارات جديدة
+                وتطوير قدراتي العلمية والعملية لبناء مستقبل مهني ناجح.
+            </p>
+
+            <a href="#about" class="btn">تعرف عليّ</a>
+            <a href="#projects" class="btn">شاهد مشروعاتي</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">من أنا؟</h2>
+
+        <div class="about">
+            <p>
+                أنا بسملة عمرو، طالبة في مجال نظم المعلومات.
+                أهتم بالتكنولوجيا والبرمجة وتصميم المواقع،
+                وأسعى إلى تطبيق ما أتعلمه في مشروعات عملية
+                تساعدني على اكتساب الخبرة وتطوير مهاراتي.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">مهاراتي واهتماماتي</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>💻 البرمجة</h3>
+                <p>تعلم أساسيات البرمجة والتفكير المنطقي وحل المشكلات.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 تصميم المواقع</h3>
+                <p>إنشاء صفحات ويب باستخدام HTML و CSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>📊 تطبيقات الحاسب</h3>
+                <p>الاهتمام بتطوير مهارات استخدام Word و Excel.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔐 الأمن السيبراني</h3>
+                <p>التعرف على أساسيات أمن المعلومات وحماية البيانات.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">مشروعاتي</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>معرض أعمالي الشخصي</h3>
+                <p>
+                    موقع شخصي للتعريف بي وعرض معلوماتي
+                    واهتماماتي ومهاراتي.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>مشروعات الويب</h3>
+                <p>
+                    تطبيق المهارات التي أتعلمها في إنشاء
+                    وتنسيق صفحات الويب.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">تواصل معي</h2>
+        <p>يسعدني التواصل وتبادل الخبرات في مجال التكنولوجيا والبرمجة.</p>
+        <p>الاسم: بسملة عمرو</p>
+        <p>التخصص: نظم المعلومات</p>
+    </section>
+</main>
+
+<footer>
+    <p>جميع الحقوق محفوظة © 2026 | بسملة عمرو</p>
+</footer>
+
+</body>
+</html>
